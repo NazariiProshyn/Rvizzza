@@ -58,7 +58,7 @@ function addEvent(viewName){
     else if (viewName == 'mainPage'){
         let a = document.getElementsByClassName('btn')
         for (let i = 0; i <a.length; i++){
-            a[i].addEventListener('click', function(){addLocalStorage(a[i].value)})
+            a[i].addEventListener('click', function(){addToCart(a[i].value)})
         }
         document.getElementById('prev-btn').addEventListener('click', function(){plusSlides(-1)})
         document.getElementById('next-btn').addEventListener('click', function(){plusSlides(1)})
